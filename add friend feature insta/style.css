@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    /* adding flex to body  */
+    display: flex;
+    align-items:flex-start;  
+    justify-content: center; 
+    background-color: cornflowerblue;
+}
+
+#card{
+    height: 400px;
+    width: 270px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    padding:30px;
+    text-align: center;
+    margin: 5%;
+}
+
+#card img{
+    height:60%;
+    width:100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.imagecaption{
+    margin:10px 0;
+    font-size:large;
+}
+
+.status{
+    font-size: medium;
+    color:rgb(191, 17, 17);
+    margin:10px;
+}
+
+#card button{
+    background-color: cadetblue;
+    color: white;
+    font-weight: 700;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 5%;
+
+}

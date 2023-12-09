@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(102, 208, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card{
+    /* simple css for it as i required */
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+#storyian{
+    /* targeting the upper section  */
+    height: 120px;
+    width: 100%;
+    padding: 15px;
+    border-bottom: 1px solid #dadada; /*this made a line appear at bottom */
+    white-space: nowrap;  /*this along with dispaly inline block made story to come in a line*/
+    overflow-x: auto;     /*this bar allowed and y bar wasnt*/
+    overflow-y: hidden;
+
+}
+#storyian::-webkit-scrollbar{
+    display: none; 
+    /* this made ugly bar gone and now scroll from ur fingers */
+}
+.story{
+    /* given css to story div , i.e circular round thing */
+    height:90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 3px solid red;
+    overflow: hidden;
+    display: inline-block;
+    
+}
+
+.story img{
+    /* adjusted img exactly inside story div */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    
+}
+

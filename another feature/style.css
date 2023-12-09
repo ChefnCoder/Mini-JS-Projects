@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width:100%;
+    background-color: #111;
+    position: relative;
+}
+
+.elem{
+    height: 100px;
+    width:100%;
+    /* background-color:aquamarine; */
+    border-bottom: 3px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.elem h1{
+    color: white;
+    font-size:6vw;
+    position: relative;
+    z-index: 9; /*so that element is visible over image since we gave it more z idx*/
+    mix-blend-mode: difference; /*transparency purpose*/
+}
+
+.elem img{
+    height:200px;
+    width:200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    position:absolute;
+
+    opacity:0; /*initially invisible since no opacity*/
+    transition: all linear 0.1s; /*when js applied thats how transition will work*/
+    
+}
